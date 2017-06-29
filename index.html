@@ -4,42 +4,43 @@
 <head>
 
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="sleepyruu website">
   <meta name="author" content="her brother">
   <link rel="shortcut icon" href="./assets/index_icon.png">
 
+  <meta http-equiv="imagetoolbar" content="no" />
+
   <title>sleepyruu</title>
 
   <!-- Stylesheets -->
 
-  <!-- Bootstrap (not ver. 4) -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-          crossorigin="anonymous"></script>
-
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.js"
-          integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-          crossorigin="anonymous"></script>
+  <!-- Bootstrap 3.3.7 -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- User -->
   <link href="main.css" rel="stylesheet">
+  <link href="./css/pulled.css" rel="stylesheet">
+  <link href="./css/custom_bootstrap_4.css" rel="stylesheet">
+
+  <!-- Hack for Surface Windows 8 deviecs -->
+  <link href="./ie10-viewport/ie10-viewport-bug-workaround.css">
+  <link href="./ie10-viewport/ie10-viewport-bug-workaround.js">
 
   <!-- Custom fonts -->
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
+
+  <!-- Loader Animation to prevent element jumping -->
+  <div id="cover"></div>
 
   <!-- Fixed Navbar -->
   <nav class="navbar navbar-fixed">
@@ -55,20 +56,74 @@
     </div>
   </nav>
 
+  <!-- Sidebar on left -->
+  <div class="sidebar">
+    <div class="valign">
+      <div class="inner">
+        <ul>
+          <li class="sidebar-left">
+            <a class="sidebar-element hvr-underline-from-left" href="#"><span style="color:#ff0000">Anime Expo</span></a>
+          </li>
+          <li class="sidebar-left">
+            <a class="sidebar-element hvr-underline-from-left" href="#">About</a>
+          </li>
+          <li class="sidebar-left">
+            <a class="sidebar-element hvr-underline-from-left" href="#">Contact</a>
+          </li>
+          <li class="sidebar-left">
+            <a class="sidebar-element hvr-underline-from-left" href="#" data-toggle="modal" data-target="#Commission-Modal">Commissions</a>
+          </li>
+          <li class="sidebar-left">
+            <a class="sidebar-elemen hvr-underline-from-left" href="#">Persona</a>
+          </li>
+          <li class="sidebar-left">
+            <a class="sidebar-elemen hvr-underline-from-left" href="#">Portfolio</a>
+          </li>
+          <li class="sidebar-left">
+            <a class="sidebar-element hvr-underline-from-left" href="#">Store</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Commission Modal -->
+  <div class="modal fade" id="Commission-Modal" tabindex="-1" role="dialog" aria-labelledby="Commission-Title">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="Commission-Title">Commission Status &nbsp; | &nbsp;   コミッション状態</h4>
+        </div>
+        <div class="modal-body">
+          We're sorry, commissions are currently <span style="color:#ff0000">not</span> being accepted.
+          <br><br>
+          Please check back another time for more information!
+          <hr>
+          申し訳ありませんですが、現在コミッションを<span style="color:#ff0000">受け取りません。</span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success">Notify Me!</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Sleepyruu Logo at the bottom right <-->
   <div class="page-header">
+    <img src="./assets/tracer.jpg" class="header-icon" alt="My drawing of Tracer" style="margin-left:3px">
     <h1>Sleepyruu</h1>
     <div class="svg">
-      <a href="https://www.twitter.com/sleepyruu" target="_blank" class="svg">
+      <a href="https://www.twitter.com/sleepyruu" target="_blank" class="svg"> <!-- EQUAL SPACING -->
         <object data="twitter.svg" type="image/svg+xml">
-          <img src="./assets/twitter.svg"/>
+          <img src="./assets/twitter.svg" style="margin-right:4px"/>
         </object>
       </a>
-      &nbsp; <!-- Extra spacing to equalize -->
       <a href="https://www.instagram.com/sleepyruu/" target="_blank" class="svg">
-        <object data="instagram.svg" type="image/svg+xml">
-          <img src="./assets/instagram.svg"/>
-        </object>
+          <object data="instagram.svg" type="image/svg+xml">
+            <img src="./assets/instagram.svg">
+          </object>
       </a>
       <a href="https://www.twitch.tv/sleepyruu" target="_blank" class="svg">
         <object data="twitch.svg" type="image/svg+xml">
@@ -76,6 +131,10 @@
         </object>
       </a>
     </div>
+  </div>
+
+  <div class="sitemap">
+    <a href="#">Site</a>
   </div>
 
 </body>
