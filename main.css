@@ -4,6 +4,23 @@ html, body {
   background-color: #ffffff;
 }
 
+html,body{height:100%;}
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+}
+
+.carousel {
+  position: absolute;
+  z-index: 1;
+}
+
+.carousel-control.left {
+    z-index: 6;
+}  
+.carousel-control.right {
+    z-index: 6;
+}
+
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -26,16 +43,21 @@ body {
 }
 
 .sidebar {
+  top: 55px;
   display: table;
+  position: absolute;
+  z-index: 7;
 }
 
 
 .sidebar-left {
   display: inline;
+
 }
 
 .sidebar-left:after {
   content: "\A\A";
+
   white-space: pre;
 }
 
