@@ -137,3 +137,14 @@
     opacity: 0;
   }
 }
+
+.chara {
+	float: left;
+	padding-left: 15px;
+}
+
+.chibi {
+	height: auto;
+	width: 5em;
+
+}
