@@ -49,15 +49,22 @@ body {
   z-index: 7;
 }
 
-
-.sidebar-left {
-  display: inline;
-
+.afterspace:before {
+  float: left;
+  content: "\A\A";
+  white-space: pre;
 }
 
-.sidebar-left:after {
-  content: "\A\A";
+.logobar {
+  z-index: 1;
+}
 
+li { 
+  cursor: pointer; cursor: hand; 
+}
+
+li:before {
+  content: "\A\A";
   white-space: pre;
 }
 
@@ -67,7 +74,6 @@ body {
   bottom: 15px;
   display: inline;
 }
-
 
 /* Property to prevent basic image saving */
 img {
@@ -88,6 +94,21 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
+
+a:active {
+  text-decoration: none;
+}
+
+a:after {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 .modal {
   text-align: center;
