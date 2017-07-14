@@ -3,8 +3,10 @@
 	vertical-align: center;
 	margin: 0 auto;
 	display: block;
-	margin-top: 7em;
+	margin-top: 2em;
 	z-index: 3;
+	height: 100%;
+	width: 90%;
 
 }
 
