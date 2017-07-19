@@ -30,7 +30,7 @@
   <link href="./css/transition.css?v=1.0" rel="stylesheet">
 
 
-  <link href="./css/twitch.css?v=1.0" rel="stylesheet">
+  <link href="./css/twitch.css?v=1.1" rel="stylesheet">
   <script src="./js/main.js"></script>  
 
   <!-- Hack for Surface Windows 8 deviecs -->
@@ -156,17 +156,35 @@
       </div>
     </div>
 
-    <!-- Controls -->
-    <!--
-    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div> -->
+  <!-- Sleepyruu Logo at the bottom right <-->
+  <div id="blogo" class="page-header fade-in-right logobar">
+    <img src="./assets/tracer.jpg" class="header-icon" alt="My drawing of Tracer" style="margin-left:3px"> 
+    <h1>Sleepyruu</h1>
+    <div class="svg">
+      <a href="https://www.twitter.com/sleepyruu" target="_blank" class="svg"> <!-- EQUAL SPACING -->
+        <object data="twitter.svg" type="image/svg+xml">
+          <img src="./assets/twitter.svg" style="margin-right:4px"/>
+        </object>
+      </a>
+      <a href="https://www.instagram.com/sleepyruu/" target="_blank" class="svg">
+          <object data="instagram.svg" type="image/svg+xml">
+            <img src="./assets/instagram.svg">
+          </object>
+      </a>
+      <a href="https://www.twitch.tv/sleepyruu" target="_blank" class="svg">
+        <object data="twitch.svg" type="image/svg+xml">
+          <img src="./assets/twitch.svg"/>
+        </object>
+      </a>
+    </div>
+  </div>
+
+  <div class="sitemap tracking-in-expand" id="smap">
+    <a href="#" data-toggle="modal" data-target="#Site-Modal">Site</a>
+  </div>
+
+
+  <!-- Modals used -->
 
   <!-- Commission Modal -->
   <div class="modal fade" id="Commission-Modal" tabindex="-1" role="dialog" aria-labelledby="Commission-Title">
@@ -199,40 +217,14 @@
           Site Information
         </div> <!-- End header -->
         <div class="modal-body">
-          This site is made by Jun, a friend of Ruu's. To contact me, click the button below.
+          This site is made by Jun, a friend of Ruu's. 
         </div> <!-- End body -->
         <div class="modal-footer">
+          <a href="https://github.com/reverie-lu/sleepyruu-portfolio" target="_blank" class="btn btn-default">Site Repository</a>
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Sleepyruu Logo at the bottom right <-->
-  <div id="blogo" class="page-header fade-in-right logobar">
-    <img src="./assets/tracer.jpg" class="header-icon" alt="My drawing of Tracer" style="margin-left:3px"> 
-    <h1>Sleepyruu</h1>
-    <div class="svg">
-      <a href="https://www.twitter.com/sleepyruu" target="_blank" class="svg"> <!-- EQUAL SPACING -->
-        <object data="twitter.svg" type="image/svg+xml">
-          <img src="./assets/twitter.svg" style="margin-right:4px"/>
-        </object>
-      </a>
-      <a href="https://www.instagram.com/sleepyruu/" target="_blank" class="svg">
-          <object data="instagram.svg" type="image/svg+xml">
-            <img src="./assets/instagram.svg">
-          </object>
-      </a>
-      <a href="https://www.twitch.tv/sleepyruu" target="_blank" class="svg">
-        <object data="twitch.svg" type="image/svg+xml">
-          <img src="./assets/twitch.svg"/>
-        </object>
-      </a>
-    </div>
-  </div>
-
-  <div class="sitemap tracking-in-expand" id="smap">
-    <a href="#" data-toggle="modal" data-target="#Site-Modal">Site</a>
   </div>
 
 </body>
