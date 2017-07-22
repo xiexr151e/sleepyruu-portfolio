@@ -1,0 +1,45 @@
+.sideline {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    right: 0;
+}
+
+.line {
+    float: right;
+    position: absolute;
+    left: 49%;
+    top: 0;
+    bottom: 1px;
+    width: 1px;
+    background: #ccc;
+    z-index: 1;
+}
+
+.wordwrapper {
+    text-align: center;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 48%;
+    margin-top: -15px;
+    z-index: 2;
+}
+
+.word {
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px;
+    font: bold 12px arial,sans-serif;
+    background: #fff;
+    margin-top: 0px;
+}
+
+
+
+
+

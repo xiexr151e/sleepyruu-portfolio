@@ -1,0 +1,6 @@
+.persona > img {
+	height: 100%;
+	position: absolute;
+	display: block;
+	text-align: center;
+}
