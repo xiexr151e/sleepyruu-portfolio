@@ -1,0 +1,145 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+
+/* Cut code for the transition background */
+html,body{height:100%;}
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+}
+
+.carousel {
+  position: absolute;
+  z-index: 1;
+}
+
+.carousel-control.left {
+    z-index: 6;
+}  
+.carousel-control.right {
+    z-index: 6;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+/* Right bottom logo */
+.page-header {
+  position: absolute;
+  bottom: 0;
+  right: 5em;
+  text-transform: lowercase;
+  background: white;
+}
+
+.header-icon {
+  width: 150px;
+  height: auto;
+}
+
+.svg {
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.sidebar {
+  top: 55px;
+  display: table;
+  position: absolute;
+  z-index: 7;
+}
+
+.afterspace:before {
+  float: left;
+  content: "\A\A";
+  white-space: pre;
+}
+
+.logobar {
+  z-index: 1;
+}
+
+
+/* List properties */
+li { 
+  /* Might be treated differently per browser */
+  cursor: pointer; cursor: hand; 
+}
+
+li:before {
+  content: "\A\A";
+  white-space: pre;
+}
+
+.sitemap {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  display: inline;
+  font-size: 0.75em;
+}
+
+
+/* Property to prevent basic image saving 
+ * This won't stop source download, hwoever */
+img {
+   pointer-events: none;
+ }
+
+ul {
+  list-style-type: none;
+}
+
+
+/* Link modifiers to prevent the blue underline */
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:after {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Modal css */
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+

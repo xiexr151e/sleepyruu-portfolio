@@ -1,89 +1,73 @@
 html, body {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-}
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 
-
-/* Cut code for the transition background */
-html,body{height:100%;}
-.carousel,.item,.active{height:100%;}
-.carousel-inner{height:100%;}
-}
-
-.carousel {
-  position: absolute;
-  z-index: 1;
-}
-
-.carousel-control.left {
-    z-index: 6;
-}  
-.carousel-control.right {
-    z-index: 6;
 }
 
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-
-/* Right bottom logo */
-.page-header {
-  position: absolute;
-  bottom: 0;
-  right: 5em;
-  text-transform: lowercase;
-  background: white;
+#hello {
+	font-family: 'Great Vibes', cursive; font-size: 35px
 }
 
-.header-icon {
-  width: 150px;
-  height: auto;
+/* Landing central div */
+.central {
+	position: absolute;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
 }
 
-.svg {
-  text-align: center;
-  text-decoration: none !important;
+.container {
+	height: 100%;
+	width: 30%;
+	float: left;
+	display: table;
+
+	margin-left: 5%;
+	vertical-align: middle;
+
+	z-index: 0;
 }
 
-.sidebar {
-  top: 55px;
-  display: table;
-  position: absolute;
-  z-index: 7;
+.container > img {
+	height: 100%;
+	width: auto;
+	margin-left: 15%;
 }
 
-.afterspace:before {
-  float: left;
-  content: "\A\A";
-  white-space: pre;
+.introduction {
+
+	width: 65%;
+	float: left;
+	/* margin-left: 15%; */
+	/* margin-top: 10%;*/
+	display: block;
+	top: 50%;
+	left: 35%;
+	transform: translateY(-52.5%);
+
+	text-align: center;
+	position: fixed;
+	text-decoration: none;
+	z-index: 7;
+
+
 }
 
-.logobar {
-  z-index: 1;
+.introduction > hr {
+	width: 7.5%;
 }
 
-
-/* List properties */
-li { 
-  /* Might be treated differently per browser */
-  cursor: pointer; cursor: hand; 
+hr {
+    border: none;
+    background-color: #ccc;
+    color: #ccc;
+    height: 1px;
 }
-
-li:before {
-  content: "\A\A";
-  white-space: pre;
-}
-
-.sitemap {
-  position: absolute;
-  left: 15px;
-  bottom: 15px;
-  display: inline;
-  font-size: 0.75em;
-}
-
 
 /* Property to prevent basic image saving 
  * This won't stop source download, hwoever */
@@ -93,53 +77,25 @@ img {
 
 ul {
   list-style-type: none;
-}
-
-
-/* Link modifiers to prevent the blue underline */
-a {
-  color: inherit;
-  text-decoration: none;
-  outline: none;
-}
-
-a:hover {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-a:active {
   text-decoration: none;
 }
 
-a:after {
-  text-decoration: none;
-  color: #000000;
+/* Remove ul indentation */
+ul {
+    padding: 0;
+    list-style-type: none;
 }
 
-a:visited {
-  color: inherit;
-  text-decoration: none;
+/* List properties */
+li { 
+  /* Might be treated differently per browser */
+   cursor: pointer; cursor: hand; 
+  white-space: pre-line;
 }
 
-/* Modal css */
-.modal {
+.sidebar {
+  display: table;
+  z-index: 7;
   text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .modal:before {
-    display: inline-block;
-    vertical-align: middle;
-    content: " ";
-    height: 100%;
-  }
-}
-
-.modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
 }
 
