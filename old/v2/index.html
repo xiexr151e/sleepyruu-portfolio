@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="sleepyruu website">
+	<link rel="shortcut icon" href="./assets/index_icon.png">
+	<meta http-equiv="imagetoolbar" content="no">
+	<title>sleepyruu</title>
+	<link href="./main.css" rel="stylesheet">
+	<!-- External CSS imports -->
+	<link href="./css/underline_animation.css" rel="stylesheet">
+	<link href="./css/landing_fade_in.css" rel="stylesheet">
+	<link href="./css/center_modal.css" rel="stylesheet">
+	<!-- Bootstrap v4.0 Alpha -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!-- Custom fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+</head>
+<body>
+
+	<div class="central fade-in">
+		<div class="container">
+			<img src="./assets/1.jpg">
+		</div>
+		<div class="introduction">
+			<p id="hello">Hello!</p>
+			<p>Thank you for visiting my website.</p>
+			<p>Please enjoy your time here.</p>
+			<hr> 
+		<!--	<div class="sidebar"> -->
+				<ul>
+					<li class="hvr-underline-from-left">
+						About
+					</li><br>
+					<li class="hvr-underline-from-left">
+						Contact
+					</li><br>
+					<li class="hvr-underline-from-left" data-toggle="modal" data-target="#commModal">
+						Commissions
+					</li><br>
+					<li class="hvr-underline-from-left-twitch" onclick="window.open('https://www.twitch.tv/sleepyruu');">
+						Livestream
+					</li><br>
+					<li class="hvr-underline-from-left">
+						Persona
+					</li><br>
+					<li class="hvr-underline-from-left">
+						Portfolio
+					</li><br>
+					<li class="hvr-underline-from-left">
+						Store
+					</li>
+			<!--	</ul>					 -->
+			</div>
+
+		</div>
+	</div>
+	
+	<!-- Commission Modal -->
+	<div class="modal fade" id="commModal" tabindex="-1" role="dialog" aria-labelledby="commTitle" aria-hidden="true">
+ 	 	<div class="modal-dialog" role="document">
+ 	 	  	<div class="modal-content">
+ 	 	    	<div class="modal-header">
+    	    		<h5 class="modal-title" id="commTitle">Commission Status</h5>
+    	    		<!-- Add a x to close -->
+    	    		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+   	        		<span aria-hidden="true">&times;</span>
+  	 	    		</button>
+    	  		</div>
+      			<div class="modal-body">
+      			 	We're sorry, commissions are currently <span style="color:#ff0000">not</span> being accepted.
+          			<br><br>
+         			Please check back another time for more information!
+         			<hr>
+          			申し訳ありませんですが、現在コミッションを<span style="color:#ff0000">受け取りません。</span>
+     			</div>
+      			<div class="modal-footer">
+       				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+    		</div>
+  		</div>
+	</div>
+
+	<!-- Fun bootstrap stuff! -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<!-- Personal scripts -->
+	<!-- Main contains a modal fixing code for clicking outside modal to exit -->
+  	<script src="./js/main.js" rel="stylesheet"></script>
+
+</body>
+
+</html>

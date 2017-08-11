@@ -1,0 +1,9 @@
+/* Property to prevent basic image saving 
+ * This won't stop source download, hwoever */
+img {
+   pointer-events: none;
+ }
+
+ul {
+  list-style-type: none;
+}

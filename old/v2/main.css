@@ -1,0 +1,101 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#hello {
+	font-family: 'Great Vibes', cursive; font-size: 35px
+}
+
+/* Landing central div */
+.central {
+	position: absolute;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+	height: 100%;
+	width: 30%;
+	float: left;
+	display: table;
+
+	margin-left: 5%;
+	vertical-align: middle;
+
+	z-index: 0;
+}
+
+.container > img {
+	height: 100%;
+	width: auto;
+	margin-left: 15%;
+}
+
+.introduction {
+
+	width: 65%;
+	float: left;
+	/* margin-left: 15%; */
+	/* margin-top: 10%;*/
+	display: block;
+	top: 50%;
+	left: 35%;
+	transform: translateY(-52.5%);
+
+	text-align: center;
+	position: fixed;
+	text-decoration: none;
+	z-index: 7;
+
+
+}
+
+.introduction > hr {
+	width: 7.5%;
+}
+
+hr {
+    border: none;
+    background-color: #ccc;
+    color: #ccc;
+    height: 1px;
+}
+
+/* Property to prevent basic image saving 
+ * This won't stop source download, hwoever */
+img {
+   pointer-events: none;
+ }
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* Remove ul indentation */
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* List properties */
+li { 
+  /* Might be treated differently per browser */
+   cursor: pointer; cursor: hand; 
+  white-space: pre-line;
+}
+
+.sidebar {
+  display: table;
+  z-index: 7;
+  text-align: center;
+}
+
