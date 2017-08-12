@@ -1,3 +1,15 @@
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
 .modal-open {
   overflow: hidden;
 }
@@ -110,6 +122,7 @@
   padding: 15px;
 }
 
+
 .modal-footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -135,6 +148,7 @@
   margin-right: .25rem;
 }
 
+
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -159,6 +173,7 @@
   }
 }
 
+/* --------------------------------------- */
 
 /* Center modal */
 
@@ -180,3 +195,11 @@
   text-align: left;
   vertical-align: middle;
 }
+
+
+/* --------------------------------------- */
+
+.navcon {
+  margin: 0 auto;
+}
+
