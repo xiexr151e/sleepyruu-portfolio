@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <!--
 	Story by HTML5 UP
@@ -6,18 +5,19 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 	Design by sleepyruu and leverieu.
+	Translated by SJ Kim.
 -->
 <html>
 	<head>
 		<title>sleepyruu</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/modal.css" />
+		<link rel="stylesheet" href="assets/css/main.css?v=1.0" />
+		<link rel="stylesheet" href="assets/css/modal.css?v=1.0" />
 		<link rel="stylesheet" href="assets/css/imageprev.css" />
-		<meta http-equiv="imagetoolbar" content="no">
-
+		<link rel="icon" href="./assets/index_icon.png" />
 		<base target="_blank">
+
 		<script>
 			 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -36,16 +36,17 @@
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-center image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-							<h1>Welcome!</h1>
-							<p class="major">Thank you for visiting my website!<br>
-											 Please enjoy your time here. ❤</p>
+							<h1>안녕하세요!</h1>
+							<p class="major">제 홈페이지를 방문해 주셔서 감사합니다!<br>
+											 부디 여기에서 즐거운 시간을 보내길 바라요. ❤</p>
 							<ul class="actions vertical">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Enter</a></li>
-								<li><a href="#" class="button small wide">日本語</a></li>
-								<li><a href="#" class="button small wide">한국어</a></li>
-								<li><a href="#" class="button small wide">中文</a></li>
-							</ul>
+								<li><a href="#first" class="button big wide smooth-scroll-middle">입장</a></li>
+								<li><a href="portfolio-kr.html" class="button small wide">작품들</a></li>
+								<li><a href="http://sleepyruu.tictail.com/" class="button small wide">상점</a></li>
+								<li><a data-toggle="modal" data-target="#navModal" class="button small wide">메뉴</a></li>
+								<!-- <li><a data-toggle="modal" data-target="#lanModal" class="button small wide">Language</a></li> -->
 						</div>
+							</ul>
 						<div class="image">
 							<img src="./assets/1.jpg" alt="" />
 						</div>
@@ -54,11 +55,11 @@
 				<!-- Two -->
 					<section class="spotlight style2 orient-right content-align-center image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2>About Me</h2>
-							<p>Hello! My name is Julia. I'm 19 years old and I like to draw and play Overwatch! I currently attend art school in New York City. Thank you for visiting and feel free to ask me any questions c:</p>
+							<h2>자기소개</h2>
+							<p>안녕하세요! 제 이름은 줄리아에요. 19살이고, 그림 그리는거랑 오버워치를 플레이 하는걸 즐겨요! 현재 뉴욕시에 있는 미술대학을 다니고 있어요. 제 홈페이지에 방문해주셔서 감사하고요, 궁금한게 있으면 언제든지 물어봐 주세요 c:</p>
 							<ul class="actions vertical">
-								<li><a href="https://curiouscat.me/sleepyruu" class="button wide" target="_blank">Ask Me Anything</a></li>
-								<li><a href="#commissions" class="button smooth-scroll-middle wide">Continue</a></li>
+								<li><a href="https://curiouscat.me/sleepyruu" class="button wide" target="_blank">질문 게시판</a></li>
+								<!-- <li><a href="#commissions" class="button smooth-scroll-middle wide">Continue</a></li> -->
 							</ul>
 						</div>
 						<div class="image">
@@ -69,12 +70,11 @@
 				<!-- Three -->
 					<section class="spotlight style2 orient-left content-align-left image-position-center onscroll-image-fade-in" id="commissions">
 						<div class="content">
-							<h2>Commissions</h2>
-							<p>Thank you for your interest! I'm sorry, but at this moment I am not taking commissions. 
-								I will announce on Twitter when I'm reopening them, so please check back another time!</p>
+							<h2>커미션</h2>
+							<p>관심 가져 주셔서 감사해요! 하지만 죄송하게도 현재 커미션을 받고 있지 않아요. 트위터에 언제 커미션을 다시 열지 공지하오니 꼭 나중에 다시 확인해 주세요!</p>
 							<ul class="actions vertical">
-								<li><a class="button wide" data-toggle="modal" data-target="#commModal">Styles</a></li>
-								<li><a href="#art" class="button wide smooth-scroll-middle">Continue</a></li>
+								<li><a class="button wide" data-toggle="modal" data-target="#commModal">사이즈 &amp; 스타일</a></li>
+								<!-- <li><a href="#art" class="button wide smooth-scroll-middle">Continue</a></li> -->
 							</ul>
 						</div>
 						<div class="image">
@@ -99,82 +99,82 @@
 				<!-- Five -->
 					<section class="wrapper style1 align-center" id="art">
 						<div class="inner">
-							<h2>Art</h2>
-							<p><a href="#" class="button smooth-scroll-middle">Portfolio</a></p>
+							<h2>밑에</h2>
+							<!--
+							<p><a href="#contact" class="button small smooth-scroll-middle">Jump to Contact</a></p>		
+							-->
 							<p>
-								Please click the button above to view my portfolio!<br>
-								Below are my persona references. Thank you to everyone who drew my persona! c:
+								밑의 버튼을 클릭해서 제 포트폴리오를 봐주세요!<br>
 							</p>
-							<ul class="actions vertical">
-								<li><a href="#contact" class="button small smooth-scroll-middle">Jump to Contact</a></li>
-							</ul>
+							<p><a href="portfolio-kr.html" class="button smooth-scroll-middle">포트폴리오</a></p>
+							<p>아래에는 제 오너캐 레퍼런스들입니다. 제 오너캐를 그려주신 모든 분들, 감사합니다! c:</p>
 						</div>
 
 						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
+							<div class="gallery style1 small lightbox onscroll-fade-in image-align-center">
 								<article>
 									<a href="./portfolio/Persona/full/4.jpg" class="image">
-										<img src="./portfolio/Persona/full/4.jpg" alt="" />
+										<img src="./portfolio/Persona/thumbnails/4.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Persona</h3>
-										<p>31 July 2016</p>
+										<h3>오너캐</h3>
+										<p>2016년 7월 31일</p>
 										<ul class="actions">
-											<li><span class="button small">Full</span></li>
-											<li><a class="button small" href="https://twitter.com/sleepyruu/status/759855219475787779">Link</a></li>
+											<li><span class="button small">꽉참</span></li>
+											<li><a class="button small" href="https://twitter.com/sleepyruu/status/759855219475787779">링크</a></li>
 										</ul>
 									</div>
 								</article>
 								<article>
 									<a href="./portfolio/Persona/full/5.jpg" class="image">
-										<img src="./portfolio/Persona/full/5.jpg" alt="" />
+										<img src="./portfolio/Persona/thumbnails/5.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Pink Persona</h3>
-										<p>14 November 2016</p>
+										<h3>핑크 오너캐</h3>
+										<p>2016년 11월 14일</p>
 										<ul class="actions">
-											<li><span class="button small">Full</span></li>
+											<li><span class="button small">꽉참</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
 									<a href="./portfolio/Persona/full/3.jpg" class="image">
-										<img src="./portfolio/Persona/full/3.jpg" alt="" />
+										<img src="./portfolio/Persona/thumbnails/3.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Pokemon Trainer</h3>
-										<p>2 August 2016</p
+										<h3>포켓몬 트레이너</h3>
+										<p>2016년 8월 2일</p
 >										<ul class="actions">
-											<li><span class="button small">Full</span></li>
-											<li><a class="button small" href="https://twitter.com/sleepyruu/status/760574705547943936">Link</a></li>
+											<li><span class="button small">꽉참</span></li>
+											<li><a class="button small" href="https://twitter.com/sleepyruu/status/760574705547943936">링크</a></li>
 										</ul>
 									</div>
 								</article>
 								<article>
 									<a href="./portfolio/Persona/full/6.jpg" class="image">
-										<img src="./portfolio/Persona/full/6.jpg" alt="" />
+										<img src="./portfolio/Persona/thumbnails/6.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Pink Persona with Glasses</h3>
-										<p>14 November 2016</p>
+										<h3>안경 쓴 핑크 오너캐</h3>
+										<p>2016년 11월 14일</p>
 										<ul class="actions">
-											<li><span class="button small">Full</span></li>
+											<li><span class="button small">꽉참</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
 									<a href="./portfolio/Persona/full/2.jpg" class="image">
-										<img src="./portfolio/Persona/full/2.jpg" alt="" />
+										<img src="./portfolio/Persona/thumbnails/2.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Fanart</h3>
+										<h3>팬아트</h3>
 										<p>
-										Drawn by <a href="https://www.instagram.com/yarkiii/">@yarkii</a>. ❤ Thank you so much!<br>
-										25 April 2016
+										<a href="https://www.instagram.com/yarkiii/">@yarkii</a> 그림. ❤ 정말 감사합니다!<br>
+										2016년 4월 25일
 										</p>
 										<ul class="actions">
-											<li><span class="button small">Full</span></li>
-											<li><a class="button small" href="https://www.instagram.com/p/BEnm6M7BS-6/?taken-by=yarkiii">Link</a></li>
+											<li><span class="button small">꽉참</span></li>
+											<li><a class="button small" href="https://www.instagram.com/p/BEnm6M7BS-6/?taken-by=yarkiii">링크</a></li>
 										</ul>
 									</div>
 								</article>
@@ -187,53 +187,64 @@
 				<!-- Six -->
 					<section class="wrapper style1 align-center" id="contact">
 						<div class="inner">
-							<h2>Contact</h2>
+							<h2>문의</h2>
 							<p>
-								Please feel free to contact me through any of these means!<br>
-								For the quickest response, please message me through Twitter c:
+								아래에 있는 방법들로 문의주세요!<br>
+								빠른 답장을 원하시면 제 트위터로 연락주세요 c:
 							</p>
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
 									<span class="icon style2 major fa-twitter"></span>
-									<h3>Twitter</h3>
+									<h3>트위터</h3>
+									<h5>Twitter</h5>
 									<p><a class="button small" href="https://www.twitter.com/sleepyruu" target="_blank">@sleepyruu</a></p>
 								</section>
 								<section>
 									<span class="icon style2 major fa-leaf"></span>
-									<h3>Tictail Store</h3>
+									<h3>틱테일 상점</h3>
+									<h5>Tictail Store</h5>
 									<p><a class="button small" href="http://sleepyruu.tictail.com/" target="_blank">@sleepyruu</a></p>
 								</section>
 								<section>
 									<span class="icon style2 major fa-twitch"></span>
-									<h3>Twitch</h3>
+									<h3>트위치</h3>
+									<h5>Twitch</h5>
 									<p><a class="button small" href="https://www.twitch.tv/sleepyruu" target="_blank">@sleepyruu</a></p>
 								</section>
 								<section>
 									<span class="icon style2 major fa-instagram"></span>
-									<h3>Instagram</h3>
+									<h3>인스타그램</h3>
+									<h5>Instagram</h5>
 									<p><a class="button small" href="https://www.instagram.com/sleepyruu/" target="_blank">@sleepyruu</a></p>
 								</section>
 								<section>
 									<span class="icon style2 major fa-question"></span>
-									<h3>Curious Cat</h3>
+									<h3>큐리어스 캣</h3>
+									<h5>Curious Cat</h5>
 									<p><a class="button small" href="https://curiouscat.me/sleepyruu" target="_blank">@sleepyruu</a></p>
 								</section>
 								<section>
 									<span class="icon style2 major fa-youtube"></span>
-									<h3>YouTube</h3>
+									<h3>유튜브</h3>
+									<h5>YouTube</h5>
 									<p><a class="button small" href="https://www.youtube.com/channel/UCimP7yDavsrMd-XGdzWjr2w/featured" target="_blank">@ruu</a></p>
 								</section>
 								<section>
 									<span class="icon style2 major fa-facebook"></span>
-									<h3>Facebook</h3>
+									<h3>페이스북</h3>
+									<h5>Facebook</h5>
 									<p><a class="button small" href="https://www.facebook.com/ruutokun/" target="_blank">@ruutokun</a></p>
 								</section>
 								<section>
 									<span class="icon style2 major fa-envelope"></span>
-									<h3>Email</h3>
+									<h3>이메일</h3>
+									<h5>Email</h5>
+									<p>sleepyruu@gmail.com</p>
+									<!--
 									<p><a class="button small" 
 										href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=sleepyruu@gmail.com&tf=1" 
 										target="_blank">Gmail</a></p>
+										-->
 							</div>
 						</div>
 					</section>
@@ -263,27 +274,75 @@
 						</div>
 					</section> -->
 
-				<!-- Modal -->
-				<div class="modal fade" id="commModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<!-- Navigation Modal -->
+				<div class="modal fade" id="navModal" tabindex="-1" role="dialog" aria-labelledby="navLabel">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">&emsp; Commission Styles</h4>
+				        <h4 class="modal-title" id="navLabel">&emsp; 메뉴</h4>
+				     	</div>
+				      	<div class="modal-body navcon">
+					
+				        		<a href="#first" class="button small wide smooth-scroll-middle" data-dismiss="modal">소개</a><br>
+								<a href="#art" class="button small wide smooth-scroll-middle" data-dismiss="modal">작품</a><br>
+								<a href="#commissions" class="button small wide smooth-scroll-middle" data-dismiss="modal">커미션</a><br>
+								<a href="#contact" class="button small wide smooth-scroll-middle" data-dismiss="modal">문의</a><br>
+								<a href="#credit" class="button small wide smooth-scroll-middle" data-dismiss="modal">크레딧</a><br>
+								<a data-toggle="modal" data-target="#lanModal" class="button small wide">언어</a> 
+							
+				      </div>
+
+
+
+				    </div>
+				  </div>
+				</div>
+
+
+				<!-- Language Modal -->
+				<div class="modal fade" id="lanModal" tabindex="-1" role="dialog" aria-labelledby="lanLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button small" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="lanLabel">&emsp; 언어선택</h4>
+				     	</div>
+				      	<div class="modal-body navcon">
+
+				        	<a href="index.html" target="_self" class="button wide">English</a><br>
+							<a href="index-jp.html" target="_self" class="button wide">日本語</a><br>
+				        	<!--
+							<a href="#" target="_self" data-dismiss="modal" class="button wide">中文</a><br>
+							-->
+
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+				<!-- Commission Modal -->
+				<div class="modal fade" id="commModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button small" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">&emsp; 사이즈 &amp; 스타일</h4>
 				      </div>
 				      <div class="modal-body">
-				        Coming soon™! &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				        곧 출시 예정! &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
 				      </div>
 				    </div>
 				  </div>
 				</div>
 
 				<!-- Footer --> 
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
+					<footer class="wrapper style1 align-center" id="credit"
+>						<div class="inner">
 						<!--
 							<ul class="icons">
 								<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
@@ -293,25 +352,28 @@
 								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
 							-->
-							<p>&copy; sleepyruu. Design: <a href="https://html5up.net">HTML5 UP</a> &amp; lu.j.</p>
+							<p>&copy; sleepyruu. 디자인: <a href="https://html5up.net">HTML5 UP</a> &amp; leverieu.</p>
+							<a data-toggle="modal" data-target="#navModal" class="button small wide">메뉴</a>
+							<!-- <a data-toggle="modal" data-target="#lanModal" class="button small wide">Language</a> -->
 						</div>
 					</footer> 
 
 			</div>
 
 		<!-- Scripts -->
+		<!-- DO NOT REMOVE ANYTHING. DOUBLE JQUERY IS NECESSARY -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="main.js"></script>
+
 			<!-- Bootstrap 4 cdn -->
 			<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-
 
 	</body>
 </html>
